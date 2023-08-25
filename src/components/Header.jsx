@@ -1,7 +1,9 @@
+//rfce + tab creates the component template
+
+import PropTypes from 'prop-types'
 
 
-//rfce
-function Header({text}) {
+function Header({ text }) {
     return (
         <>
             <header>
@@ -15,6 +17,10 @@ function Header({text}) {
 
 Header.defaultProps = {
     text: 'Feedback UI',
+}
+
+Header.propTypes = {
+    text: PropTypes.string,
 }
 
 export default Header
