@@ -44,3 +44,10 @@ Authentication with JWT
 Much More...
 
 This course has been completely re-done with new projects and concepts from the old course. I have a few React courses and this is the one that I always suggest people start with before moving on to the MERN courses
+
+## Feedback App Links
+[Feedback App Repo](https://github.com/bradtraversy/feedback-app)
+
+<br>
+
+[Udemy Course](https://www.udemy.com/course/react-front-to-back-2022/)
