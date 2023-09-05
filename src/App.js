@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import FeedbackData from './data/FeedbackData';
 import FeedbackList from './components/FeedbackList';
+import FeedbackStats from './components/FeedbackStats';
 
 function App() {
   //Feedback is the prop passed from app.js that refers to the array of objects in FeedbackData.js.
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header />
       <div className="App">
+        <FeedbackStats feedback={feedback} />
         {/* feedback is from the state that is referred to on line 10 */}
         <FeedbackList feedback={feedback}
           handleDelete={deleteFeedback} />
