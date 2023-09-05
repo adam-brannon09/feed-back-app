@@ -8,13 +8,18 @@ import FeedbackList from './components/FeedbackList';
 function App() {
   //Feedback is the prop passed from app.js that refers to the array of objects in FeedbackData.js.
   const [feedback, setFeedback] = useState(FeedbackData);
-
+  const deleteFeedback = (id) => {
+    if (window.confirm('Are you sure you want to delete this feedback?')) {
+      setFeedback(feedback.filter((item) => item.id !== id))
+    }
+  }
   return (
     <>
       <Header />
       <div className="App">
         {/* feedback is from the state that is referred to on line 10 */}
-        <FeedbackList feedback={feedback} />
+        <FeedbackList feedback={feedback}
+          handleDelete={deleteFeedback} />
       </div>
 
     </>
