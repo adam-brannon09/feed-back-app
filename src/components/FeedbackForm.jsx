@@ -4,7 +4,7 @@ import Button from "./shared/Button"
 import RatingSelect from "./RatingSelect"
 
 function FeedbackForm({ handleAdd }) {
-    //State
+    //State for the form
     const [text, setText] = useState('')
     const [rating, setRating] = useState(0)
     const [btnDisabled, setBtnDisabled] = useState(true)
