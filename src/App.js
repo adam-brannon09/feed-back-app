@@ -9,6 +9,7 @@ import FeedbackList from './components/FeedbackList';
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackForm from './components/FeedbackForm';
 import AboutPage from './pages/AboutPage';
+import AboutIconLink from './components/AboutIconLink';
 
 function App() {
   //Feedback is the prop passed from app.js that refers to the array of objects in FeedbackData.js.
@@ -28,7 +29,7 @@ function App() {
     // The Router component is the parent component that wraps all the other components that will be using the react-router-dom library. The Router component is imported from react-router-dom.
     <Router>
       <Header />
-      <div className="App">
+      <div className="container">
         <Routes>
           The Routes component is the parent component that wraps all the Route components. The Routes component is imported from react-router-dom.
           <Route exact path='/' element={
@@ -43,6 +44,7 @@ function App() {
           </Route>
           <Route path='/about' element={<AboutPage />} />
         </Routes>
+        <AboutIconLink />
       </div>
     </Router>
 
